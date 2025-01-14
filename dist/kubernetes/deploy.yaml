@@ -1059,6 +1059,8 @@ metadata:
     app.kubernetes.io/component: service
     app.kuberneres.io/owner: retail-store-sample
     app.kubernetes.io/managed-by: Helm
+  annotations:
+    service.beta.kubernetes.io/aws-load-balancer-scheme: "internet-facing"
 spec:
   type: LoadBalancer
   ports:
